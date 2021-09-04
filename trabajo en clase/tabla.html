@@ -9,7 +9,7 @@
 <body>
     <table border="2"><!--- border="1"=>tamaño borde-->
         <tr><!---para hacer la estructura de la tabla-->
-            <th colspan ="4" align= "center"> Tabla principal de usuarios</th><!---para hacer titulos de las columnas con COLSPAN SE UNEN COLUMNAS-->
+            <!--<th colspan ="4" align= "center"> Tabla principal de usuarios</th><-para hacer titulos de las columnas con COLSPAN SE UNEN COLUMNAS-->
                      
         </tr>
         <tr><!---para hacer la estructura de la tabla-->
@@ -21,18 +21,18 @@
         <tr>
             <td rowspan="3"> juan </td><!---para hacer columnas se agrega la informacion-->
             <td>perez</td>
-            <td>juan@gmail.com</td>
+            <td colspan ="4"> juan@gmail.com</td> <!--COLSPAN SE USAN PARA ASIGANRLE DOS O MAS COLUMNAS AL DATO-->
             
         </tr>
         <tr>
-            <td>maria</td>
+            <td> maria</td>
             <td>luna</td>
-            <td>m@gmail.com</td>
+            <td rowspan="2">m@gmail.com</td> <!--ROWSPAN SE USAN PARA ASIGANRLE DOS O MAS FILAS  AL DATO-->
         </tr>
         <tr>
-              <td>luis</td>
-              <td>hernandez</td>
-              <td>l@gmail.com</td>
+              <td colspan="2">luis</td>
+              <!--<td>hernandez</td>-->
+              <!--<td>l@gmail.com</td>-->
               
         </tr>
     </table>
