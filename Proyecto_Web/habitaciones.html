@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Habitaciones</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Registro de Habitaciones</legend>
+        <p> No. del piso <input type="number" name="numpiso" min="1" max="99"></p>
+        <p> No. de habitación <input type="number" name="numhabitacion" min="1" max="999"></p>
+        <p>
+            Tipo de habitacion
+            <select name="Tipo de habitacion" >
+                <option value="Individual">Individual</option>
+                <option value="Doble">Doble</option>
+                <option value="Triple">Triple</option>
+                <option value="Quad">Quad</option>
+                <option value=" Suite"> Suite</option>
+                <option value="Master Suite">Master Suite</option>
+            </select>
+        </p> 
+        <p>
+            habitación con: 
+                <input type="radio" name="tipohabitacion" value="aire"> Aire Acondicionado </input>
+                <input type="radio" name="tipohabitacion" value="abanico"> Abanico </input>
+        </p>
+        <p> Precio <input type="text" name="precio" min="1" max="99"></p>
+        <p>
+            Con minibar: 
+                <input type="radio" name="minibar" value="si"> SI
+                <input type="radio" name="minibar" value="no"> NO
+        </p>
+        <input type="submit" value="Guardar"> &nbsp&nbsp
+        <input type="submit" value="Borrar"> &nbsp&nbsp
+        <input type="submit" value="Salir">
+    </fieldset>
+</body>
+</html>
