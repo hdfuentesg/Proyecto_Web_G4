@@ -1,0 +1,17 @@
+body{
+    
+    width: 30em;
+    height: 30em;
+    background: cornflowerblue; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: 120%;
+    font-size: x-large;
+    margin: 5em 5em 5em 5em;
+    padding: 5em 5em 5em 5em;
+    text-align: center;
+    border-style: solid;
+    border-radius: 3em;
+    border-color: rgb(159, 160, 95);
+    border-width: 12px;
+    box-shadow: 10px 10px 0 10px rgb(216, 25, 175) inset;
+}
