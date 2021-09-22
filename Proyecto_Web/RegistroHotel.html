@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Hotel</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Registro de Hoteles</legend>
+        <p> NIT: <input type="text" name="nit"></p>
+        <p> Nombre: <input type="text" name="nombre"></p>
+        <p> Dirección: <input type="text" name="direccion"></p>
+        <p> Telefono: <input type="tel" name="telefono"></p>
+        <p>Número de habitaciones: <input type="number" name="numhabitacion" min="1" max="999"></p> 
+        <li><a href="habitaciones.html" >Registrar datos de las habitaciones</a></li>       
+        <p>
+            Estrellas: <br/>
+            <input type="radio" name="estrellas" value="una"> 1 
+            <input type="radio" name="estrellas" value="dos"> 2 
+            <input type="radio" name="estrellas" value="tres"> 3 
+            <input type="radio" name="estrellas" value="cuatro"> 4
+            <input type="radio" name="estrellas" value="cinco"> 5
+        </p>
+        <input type="submit" value="Guardar"> &nbsp&nbsp
+        <input type="submit" value="Borrar"> &nbsp&nbsp
+        <input type="submit" value="Salir">
+    </fieldset>
+</body>
+</html>

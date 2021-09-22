@@ -1,0 +1,44 @@
+*{
+    margin:1;
+    padding:1;
+}
+body{
+    margin: 2em;
+    background: whitesmoke;
+    font-style: normal;
+}
+header{
+    background-color: whitesmoke;
+   border-bottom-color:#266041 ;
+}
+nav{
+    background-color: #DBB92F;
+    padding: 0.5em;
+    border-radius:0.5em;
+    text-align: center;
+    -moz-box-align: baseline;
+}
+section{
+    background-color:#FFACAB ;
+    border-width: 50px;
+    border-color: #266041;
+    padding: 0.5em;
+    border-radius:0.5em;
+    text-align: center;
+    height: 30%;
+}
+article{
+    background-color: whitesmoke;
+    border-color: white;
+    border-radius: 0.5em;
+    border-style: solid;
+    text-justify: justify ;
+    color: #266041;
+    text-transform: inherit;
+}
+footer{
+    background-color: #FF5757;
+    text-align: right;
+    border-radius: 0.5em;
+    color: purple;
+}

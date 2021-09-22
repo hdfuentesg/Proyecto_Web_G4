@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#contenedor{
+    width: 1200px;
+    height: 800px;
+    /* background: cadetblue; */
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+#header{
+    height: 15%;
+    background: darkgray;
+    border-radius: 1em;
+    margin: 0.5em;
+    padding: 10px;
+    text-align: center;
+    color: darkred;
+    font: italic;
+}
+#nav{
+    height: 10%;
+    background: chocolate;
+    border-radius: 1em;
+    margin: 0.5em;
+    color: darkblue;
+    font: medium;
+    padding: 10px;
+}
+#contenido{
+    height: 50%;
+    border-radius: 1em;
+    margin: 0.5em;
+    background: aquamarine;
+    padding: 10px;
+}
+#footer{
+    height: 10%;
+    background: coral;
+    color: blue;
+    border-radius: 1em;
+    margin: 0.5em;
+    padding: 1em;
+}
+#section{
+    height: 96%;
+    width: 60%;
+    background: darkkhaki;
+    border-radius: 1em;
+    float: left;
+    margin: 0.5em;
+    padding: 5px;
+    color: blue;
+}
+#aside{
+    height: 96%;
+    width: 35%;
+    background: darkseagreen;
+    border-radius: 1em;
+    float: right;   
+    margin: 0.5em;
+    padding: 5px;
+    color: deeppink;
+}
+.articulo{
+    font-size: larger;
+    height: 22%;
+    color: black;
+    background: darkseagreen;
+    border-radius: 1em;
+    float: initial;   
+    margin: 0.5em;
+    padding: 1px;
+    color: deeppink;
+}
+#art1{
+    background: tomato;
+    text-align-last: center;
+    font-style: italic;
+    color:  lawngreen;
+}
+#art2{
+    text-align-last: right;
+    font-style: normal;
+    color: red;
+}
+#art3{
+    background: yellow;
+    text-decoration-line: overline;
+    font-style: oblique;
+    color: blue;
+}
+#art4{
+    text-align: end;
+    text-decoration-line: underline;
+    font-style: inherit;
+    color: yellow;
+}
