@@ -6,24 +6,23 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateReservasTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    
     public function up()
     {
         Schema::create('reservas', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('doc_cliente', 10);
+            $table->foreignId('doc_habitacion');
+            $table->date('fecha_inicio');
+            $table->date('fecha_fin');
+            $table->tinyInteger('huespedes');
+
+            $table->foreign('doc_cliente')->references('doc')->on('clientes');
+            $table->foreign('id_habitacion')->references('id')->on('habitacions');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+    
     public function down()
     {
         Schema::dropIfExists('reservas');

@@ -6,24 +6,19 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateHotelsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('hotels', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nombre', 50);
+            $table->string('ciudad', 50);
+            $table->string('direccion', 80);
+            $table->tinyinteger('estrellas');
+            $table->string('telefono', 14);
+            
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('hotels');
