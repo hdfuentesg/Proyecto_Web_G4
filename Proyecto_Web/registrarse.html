@@ -4,21 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="registrarse.css">
+    <title>Registro de Hotel</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 <body>
-    <fieldset>
-        <legend>CREA TU CUENTA</legend>  <!--crea rectangulo legend-->
-        <p><label>Nombres:   <input type="text" name="Nombres"></label></p>
-        <p><label>Apellidos: <input type="text" name="Apellidos"></label></p>
-        <p><label>Direccion: <input type="text" name="Direccion"></label></p>
-        <p><label>Edad:      <input type="number" value="Edad"></label></p>
-        <p><label>Clave:      <input type="number" value="Clave"></label></p>
-        <p><label>Confirmar Clave:      <input type="number" value=" Confirmar Clave"></label></p>
-        <form action="../form-result.php" target="_blank"><!--el resultado lo envia a una hoja en blanco-->
-            <input type="submit" value="Login">
-        </form>
-     </fieldset>
+    <div class="container-fluid tect-center h-80  p-0 mb-3">
+        <header class="m-3 p-4">
+            <div class="row align-items-start">
+                <div class="col-5 text-center">
+                    <img src="imagenes/logo.png" alt="Logotipo Santander"  width="200" height="200"  >
+                   
+                </div>
+                <div class="col-6 text-center">
+                    <a class="btn btn-success"  href="loggin.html" role="button" >Iniciar sesión</a>
+                    <a class="btn btn-success"  href="registrarse.html" role="button" >Registrarse</a>
+                    <a class="btn btn-success"  href="index.html" role="button" >Inicio</a><br/><br/><br/><br/>
+                    
+                 
+                </div>
+            </div>
+        </header>
+        <section  class=" container-fluid text-center  m-2">
+            <div class="col-auto">
+                <label for="Tipo de habitacion" class="form-label"><h4>CREA TU CUENTA</h4></label>
+            </div>
+        </section>
 
+        <fieldset class=" container-fluid text-center  m-2">
+            <div class="row align-items-start m-5 col-auto ps-2 pe-3">
+                <legend>ESCRIBE TUS DATOS</legend><br/>  <!--crea rectangulo legend-->
+                <p><label>Nombres:   <input type="text" name="Nombres"></label></p>
+                <p><label>Apellidos: <input type="text" name="Apellidos"></label></p>
+                <p><label>Direccion: <input type="text" name="Direccion"></label></p>
+                <p><label>Edad:      <input type="number" value="Edad"></label></p>
+                <p><label>Clave:      <input type="number" value="Clave"></label></p>
+                <p><label>Confirmar Clave:      <input type="number" value=" Confirmar Clave"></label></p>
+                <form action="../form-result.php" target="_blank"><!--el resultado lo envia a una hoja en blanco-->
+                   <div><a class="btn btn-success"  href="#" role="button" >Guardar</a></div>
+                </form>
+            
+                
+                
+        </fieldset>
+    </div>
 </body>
 </html>
+
+
+

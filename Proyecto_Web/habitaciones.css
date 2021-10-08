@@ -1,0 +1,25 @@
+*{
+    margin:1;
+    padding:1;
+
+}
+header{
+   
+    
+    font-size: 20px;
+    font-style: normal ;
+    background-color: whitesmoke;
+}
+section{
+    background-color: pink;
+    color: purple;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+fieldset{
+   background-color: rgb(228, 227, 227);
+   color:#266041;
+   text-align: center;
+   text-indent: 2px;
+   border-color: purple;
+}
