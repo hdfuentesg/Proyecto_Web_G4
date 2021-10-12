@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,46 +9,92 @@
     <title>Registro de Hotel</title>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container-fluid tect-center h-80  p-0 mb-3">
         <header class="m-3 p-4">
             <div class="row align-items-start">
                 <div class="col-5 text-center">
-                    <img src="imagenes/logo.png" alt="Logotipo Santander"  width="200" height="200"  >
-                   
+                    <img src="imagenes/logo.png" alt="Logotipo Santander" width="200" height="200">
+
                 </div>
                 <div class="col-6 text-center">
-                    <a class="btn btn-success"  href="loggin.html" role="button" >Iniciar sesión</a>
-                    <a class="btn btn-success"  href="RegistroHotel.html" role="button" >Registrar mi hotel</a>
-                    <a class="btn btn-success"  href="index.html" role="button" >Inicio</a><br/><br/><br/><br/>
-                    
-                 
+                    <a class="btn btn-success" href="loggin.html" role="button">Iniciar sesión</a>
+                    <a class="btn btn-success" href="RegistroHotel.html" role="button">Registrar mi hotel</a>
+                    <a class="btn btn-success" href="index.html" role="button">Inicio</a><br /><br /><br /><br />
+
+
                 </div>
             </div>
         </header>
-        <section  class=" container-fluid text-center  m-2">
+        <section class=" container-fluid text-center  m-2">
             <div class="col-auto">
-                <label for="Tipo de habitacion" class="form-label"><h4>CREA TU CUENTA</h4></label>
+                <label for="Tipo de habitacion" class="form-label">
+                    <h4>CREA TU CUENTA</h4>
+                </label>
             </div>
         </section>
 
         <fieldset class=" container-fluid text-center  m-2">
-            <div class="row align-items-start m-5 col-auto ps-2 pe-3">
-                <legend>ESCRIBE TUS DATOS</legend><br/>  <!--crea rectangulo legend-->
-                <p><label>Nombres:   <input type="text" name="Nombres"></label></p>
-                <p><label>Apellidos: <input type="text" name="Apellidos"></label></p>
-                <p><label>Direccion: <input type="text" name="Direccion"></label></p>
-                <p><label>Edad:      <input type="number" value="Edad"></label></p>
-                <p><label>Clave:      <input type="number" value="Clave"></label></p>
-                <p><label>Confirmar Clave:      <input type="number" value=" Confirmar Clave"></label></p>
-                <form action="../form-result.php" target="_blank"><!--el resultado lo envia a una hoja en blanco-->
-                   <div><a class="btn btn-success"  href="#" role="button" >Guardar</a></div>
-                </form>   
-            </div>     
+            <div class="d-flex justify-content-center">
+                <div class="row m-5 col-5">
+                    <div class="col-2">
+                        <label class="col-form-label">Nombres</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="TxtNombres" placeholder="Nombres">
+                    </div>
+
+                    <div class="col-2">
+                        <label class="col-form-label">Apellidos</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="TxtApellidos" placeholder="Apellidos">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Direccion</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="TxtDireccion" placeholder="Direccion">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Edad</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="TxtEdad" placeholder="Edad">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Edad</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="TxtEdad" placeholder="Edad">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Clave</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="txtClave" placeholder="Clave">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Confirmar Clave</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="txtConfClave" placeholder="Confirmar Clave">
+                    </div>
+
+                    <br>
+                    <form action="../form-result.php" target="_blank">
+                        <!--el resultado lo envia a una hoja en blanco-->
+                        <div><a class="btn btn-success" href="#" role="button">Guardar</a></div>
+                    </form>
+                </div>
+            </div>
         </fieldset>
     </div>
 </body>
 </html>
-
-
-
