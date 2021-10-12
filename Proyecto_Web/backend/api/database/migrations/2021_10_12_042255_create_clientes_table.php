@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateClientesTable extends Migration
 {
-
     public function up()
     {
         Schema::create('clientes', function (Blueprint $table) {
@@ -19,6 +18,7 @@ class CreateClientesTable extends Migration
 
             $table->primary('doc');
         });
+
     }
 
     public function down()

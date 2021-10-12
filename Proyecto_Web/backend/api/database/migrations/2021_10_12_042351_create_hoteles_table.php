@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateHotelesTable extends Migration
 {
+    
     public function up()
     {
         Schema::create('hoteles', function (Blueprint $table) {
@@ -17,10 +18,11 @@ class CreateHotelesTable extends Migration
             $table->string('telefono', 14);
             
         });
+
     }
 
     public function down()
     {
-        Schema::dropIfExists('hoteles');
+        Schema::dropIfExists('hotels');
     }
 }
