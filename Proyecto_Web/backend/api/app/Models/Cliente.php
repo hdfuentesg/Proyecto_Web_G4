@@ -8,7 +8,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class Cliente extends Authenticable implements JWTSubject
+class Cliente extends Model
 {
     use Notifiable;
     public $timestamps = false;
