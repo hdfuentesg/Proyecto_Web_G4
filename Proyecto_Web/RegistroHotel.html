@@ -6,35 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estiloregistroHotel.css">
     <title>Registro de Hotel</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 <body>
-    <fieldset class="cuadroRegistro">
-        <legend>Registro de Hoteles</legend>
-        <p> NIT: <input type="text" name="nit"></p>
-        <p> Nombre: <input type="text" name="nombre"></p>
-        <p> Dirección: <input type="text" name="direccion"></p>
-        <p> Telefono: <input type="tel" name="telefono"></p>
-        <p>Número de habitaciones: <input type="number" name="numhabitacion" min="1" max="999"></p> 
-            <b><a href="habitaciones.html" >Registrar datos de las habitaciones</a></b>       
-        <p>
-            Estrellas: <br/>
-                <input type="radio" name="estrellas" value="una"> 1 
-                <input type="radio" name="estrellas" value="dos"> 2 
-                <input type="radio" name="estrellas" value="tres"> 3 
-                <input type="radio" name="estrellas" value="cuatro"> 4
-                <input type="radio" name="estrellas" value="cinco"> 5
-        </p>
-        <input type="submit" value="Guardar"> &nbsp&nbsp
-        <input type="submit" value="Borrar"> &nbsp&nbsp
-        <input type="submit" value="Salir">
-    </fieldset>
-    <div class="col d-flex align-items-start">
-        <ul>
-            <b><a href="filtro.html">Inicio</a><br></b>
-            <b><a href="loggin.html">Iniciar sesión</a><br></b>
-            <b><a href="registrarse.html">Registrar usuaro</a><br></b>
-        </ul>
+    <div class="container-fluid tect-center h-80  p-0 mb-3">
+        <header class="m-3 p-4">
+            <div class="row align-items-start">
+                <div class="col-5 text-center">
+                    <img src="imagenes/logo.png" alt="Logotipo Santander"  width="200" height="200"  >
+                   
+                </div>
+                <div class="col-6 text-center">
+                    <a class="btn btn-success"  href="loggin.html" role="button" >Iniciar sesión</a>
+                    <a class="btn btn-success"  href="registrarse.html" role="button" >Registrarse</a>
+                    <a class="btn btn-success"  href="index.html" role="button" >Inicio</a><br/><br/><br/><br/>
+                    
+                 
+                </div>
+            </div>
+        </header>
+        <section  class=" container-fluid text-center  m-2">
+            <div class="col-auto">
+                <label for="Tipo de habitacion" class="form-label">
+                    <h4>REGISTRO DE HOTELES</h4>
+                </label>
+            </div>
+        </section>
+
+        <fieldset class=" container-fluid text-center  m-2">
+            <div class="d-flex justify-content-center">
+                <div class="row m-5 col-5">
+                    <div class="col-2">
+                        <label class="col-form-label">NIT</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="TxtNIT" placeholder="NIT">
+                    </div>
+
+                    <div class="col-2">
+                        <label class="col-form-label">Nombre</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="TxtNombre" placeholder="Nombre">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Direccion</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="TxtDireccion" placeholder="Direccion">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Telefono</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="TxtTelefono" placeholder="Telefono">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Numero de habitaciones</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="number" class="form-control  min=1 max= 999" id="Numhabitacion" placeholder="Numhabitacion">
+                    </div>
+
+                    <div class="col-2">
+                        <label for="inputPassword6" class="col-form-label">Estrellas</label>
+                    </div>
+                    <div class="col-10">
+                        <input type="radio" name="estrellas" value="una"> 1 
+                        <input type="radio" name="estrellas" value="dos"> 2 
+                        <input type="radio" name="estrellas" value="tres"> 3 
+                        <input type="radio" name="estrellas" value="cuatro"> 4
+                        <input type="radio" name="estrellas" value="cinco"> 5
+                    </div>
+
+                   
+                    <br>
+                    <form action="../form-result.php" target="_blank">
+                        <!--el resultado lo envia a una hoja en blanco-->
+                        <div><a class="btn btn-success" href="#" role="button">Guardar</a></div>
+                    </form>
+                </div>
+
+            <!-- <legend>Ingresa los datos</legend>
+            <br/>
+            <p> NIT: <input type="text" name="nit"></p>
+            <p> Nombre: <input type="text" name="nombre"></p>
+            <p> Dirección: <input type="text" name="direccion"></p>
+            <p> Telefono: <input type="tel" name="telefono"></p>
+            <p>Número de habitaciones: <input type="number" name="numhabitacion" min="1" max="999"></p> 
+            <li><a href="habitaciones.html" >Registrar datos de las habitaciones</a></li>       
+            
+            <div>
+                <a class="btn btn-success"  href="#" role="button" >Guardar</a>
+                <a class="btn btn-success"  href="#" role="button" >Borrar</a>
+                <a class="btn btn-success"  href="#" role="button" >Salir</a>
+            </div>
+            </div>
+        </fieldset>
     </div>
-    
 </body>
 </html>

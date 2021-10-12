@@ -1,16 +1,16 @@
 body{
-    width: 15em;
-    height: 15em;
-    background: cadetblue;
+    width: 30em;
+    height: 13em;
+    background: rgb(243, 213, 218);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: 120%;
     font-size: x-large;
-    margin: 5em 5em 5em 5em;
+    margin: 3em 5em 5em 5em;
     padding: 5em 5em 5em 5em;
     text-align: center;
     border-style: dotted;
     border-radius: 3em;
-    border-color: cadetblue;
-    border-width: 12px;
-    box-shadow: 10px 10px 0 10px rgb(156, 55, 55) inset;
+    border-color: rgb(243, 213, 218);
+    border-width: 10px;
+    box-shadow: 10px 10px 0 10px #266041 inset;
 }

@@ -4,38 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Habitaciones</title>
+    <link rel="stylesheet" href="habitaciones.css">
+    <title>Registro de Hotel</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 <body>
-    <fieldset>
-        <legend>Registro de Habitaciones</legend>
-        <p> No. del piso <input type="number" name="numpiso" min="1" max="99"></p>
-        <p> No. de habitación <input type="number" name="numhabitacion" min="1" max="999"></p>
-        <p>
-            Tipo de habitacion
-            <select name="Tipo de habitacion" >
-                <option value="Individual">Individual</option>
-                <option value="Doble">Doble</option>
-                <option value="Triple">Triple</option>
-                <option value="Quad">Quad</option>
-                <option value=" Suite"> Suite</option>
-                <option value="Master Suite">Master Suite</option>
-            </select>
-        </p> 
-        <p>
-            habitación con: 
-                <input type="radio" name="tipohabitacion" value="aire"> Aire Acondicionado </input>
-                <input type="radio" name="tipohabitacion" value="abanico"> Abanico </input>
-        </p>
-        <p> Precio <input type="text" name="precio" min="1" max="99"></p>
-        <p>
-            Con minibar: 
-                <input type="radio" name="minibar" value="si"> SI
-                <input type="radio" name="minibar" value="no"> NO
-        </p>
-        <input type="submit" value="Guardar"> &nbsp&nbsp
-        <input type="submit" value="Borrar"> &nbsp&nbsp
-        <input type="submit" value="Salir">
-    </fieldset>
+    <div class="container-fluid tect-center h-80  p-0 mb-3">
+        <header class="m-3 p-4">
+            <div class="row align-items-start">
+                <div class="col-5 text-center">
+                    <img src="imagenes/logo.png" alt="Logotipo Santander"  width="200" height="200"  >
+                   
+                </div>
+                <div class="col-6 text-center">
+                    <a class="btn btn-success"  href="loggin.html" role="button" >Iniciar sesión</a>
+                    <a class="btn btn-success"  href="registrarse.html" role="button" >Registrarse</a>
+                    <a class="btn btn-success"  href="index.html" role="button" >Inicio</a><br/><br/><br/><br/>
+                    
+                 
+                </div>
+            </div>
+        </header>
+        <section  class=" container-fluid text-center  m-2">
+            <div class="col-auto">
+                <label for="Tipo de habitacion" class="form-label"><h4>REGISTRO DE HABITACIONES</h4></label>
+            </div>
+        </section>
+        <fieldset>
+            <legend>Registro de Habitaciones</legend>
+            <p> No. del piso <input type="number" name="numpiso" min="1" max="99"></p>
+            <p> No. de habitación <input type="number" name="numhabitacion" min="1" max="999"></p>
+            <p>
+                Tipo de habitacion
+                <select name="Tipo de habitacion" >
+                    <option value="Individual">Individual</option>
+                    <option value="Doble">Doble</option>
+                    <option value="Triple">Triple</option>
+                    <option value="Quad">Quad</option>
+                    <option value=" Suite"> Suite</option>
+                    <option value="Master Suite">Master Suite</option>
+                </select>
+            </p> 
+            <p>
+                habitación con: 
+                    <input type="radio" name="tipohabitacion" value="aire"> Aire Acondicionado </input>
+                    <input type="radio" name="tipohabitacion" value="abanico"> Abanico </input>
+            </p>
+            <p> Precio <input type="text" name="precio" min="1" max="99"></p>
+            <p>
+                Con minibar: 
+                    <input type="radio" name="minibar" value="si"> SI
+                    <input type="radio" name="minibar" value="no"> NO
+            </p>
+            <div>
+                <a class="btn btn-success"  href="#" role="button" >Guardar</a>
+                <a class="btn btn-success"  href="#" role="button" >Borrar</a>
+                <a class="btn btn-success"  href="#" role="button" >Salir</a>
+            </div>
+         </div>
+        </fieldset>
+
+        
+    </div>
 </body>
 </html>
