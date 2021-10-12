@@ -9,7 +9,7 @@ class Hotel extends Model
 {
     protected $table = 'hoteles';
 
-    public function Habitacion(){
+    public function habitaciones(){
         return $this->hasMany(Habitacion::class);
     }
 }

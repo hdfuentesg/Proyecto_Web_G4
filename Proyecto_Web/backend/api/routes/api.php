@@ -15,7 +15,7 @@ use App\Http\Controllers\ClienteController;
 |
 */
 
-/*Route::get('/Cliente',[ClienteController::class, 'showAll']);*/
+/* Route::get('/Cliente',[ClienteController::class, 'showAll']); */
 Route::post('/Cliente/signup',[ClienteController::class, 'signup']);
 Route::post('/Cliente/login',[ClienteController::class, 'login']);
 Route::post('/Cliente/search',[ClienteController::class, 'search']);

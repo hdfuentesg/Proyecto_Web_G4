@@ -12,7 +12,7 @@ class ClienteController extends Controller
     }
 
     public function login(Request $request){
-        /*$correo = $request->input('correo');
+        $correo = $request->input('correo');
         $clave = $request->input('clave');
 
         $cliente = Cliente::select('clave')->where('correo', $correo)->first();
@@ -21,7 +21,7 @@ class ClienteController extends Controller
             "validado"=> $cliente->clave==$clave
         );
 
-        return $res;*/
+        return $res;
 
         $credentials = $request->all();
 
