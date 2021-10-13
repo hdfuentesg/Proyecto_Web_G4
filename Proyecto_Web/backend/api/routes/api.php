@@ -15,8 +15,8 @@ Route::get('/Habitacion/search',[HabitacionController::class, 'search']);
 Route::group(['middleware' => ['jwt.verify']], function() {
     Route::get('/Cliente', [ClienteController::class, 'showAll']);
     Route::post('/Cliente/update', [ClienteController::class, 'update']);
-    Route::post('/Reserva/create', [ReservaController::class, 'create']);
-    Route::post('/Reserva/history', [ReservaController::class, 'showByCliente']);
+    Route::post('/Reservacion/create', [ReservaController::class, 'create']);
+    Route::post('/Reservacion/history', [ReservaController::class, 'showByCliente']);
 });
 
 /* Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
