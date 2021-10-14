@@ -14,7 +14,8 @@ class CreateClientesTable extends Migration
             $table->string('apellidos',50);
             $table->string('correo',50)->unique();
             $table->string('clave',64);
-            $table->date('registro');
+            /* $table->date('registro'); */
+            $table->timestamp('registro')->useCurrent();
 
             $table->primary('doc');
         });
