@@ -10,6 +10,37 @@ use Illuminate\Database\QueryException;
 class ReservaController extends Controller
 {
     public function create (Request $request){
-        return 'hola';
+        
+        /* CODIGO FUNCIONAL
+        $data = $request->all();
+        
+        $token = $request->bearerToken();
+        $doc = JWTAuth::getPayload($token)->toArray()['sub'];
+        
+        $data['doc_cliente'] = $doc;
+        
+        $created = Reserva::create($data);
+
+        return $created; */
+        
+        /* return 'hola'; */
+
+        $data = $request->all();
+        $token = $request->bearerToken();
+        $doc = JWTAuth::getPayload($token)->toArray()['sub'];
+        $data['doc_cliente'] = $doc;
+        try{
+            $created = is_object(Reserva::create($data));
+        }catch(QueryException $e){
+            $created = false;
+        }
+        return array ('created' => $created); 
+    }
+
+    public function showByCliente(Request $request){
+        $token = $request->bearerToken();
+        $doc = JWTAuth::getPayload($token)->toArray()['sub'];
+        $history = Reserva::where('doc_cliente', $doc)->get();
+        return $history;
     }
 }
