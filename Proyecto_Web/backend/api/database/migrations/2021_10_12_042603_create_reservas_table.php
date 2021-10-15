@@ -12,13 +12,13 @@ class CreateReservasTable extends Migration
         Schema::create('reservas', function (Blueprint $table) {
             $table->id();
             $table->string('doc_cliente', 10);
-            $table->foreignId('id_habitacion');
+            $table->foreignId('habitacion_id');
             $table->date('fecha_inicio');
             $table->date('fecha_fin');
             $table->tinyInteger('huespedes');
 
             $table->foreign('doc_cliente')->references('doc')->on('clientes');
-            $table->foreign('id_habitacion')->references('id')->on('habitaciones');
+            $table->foreign('habitacion_id')->references('id')->on('habitaciones');
         });
 
     }

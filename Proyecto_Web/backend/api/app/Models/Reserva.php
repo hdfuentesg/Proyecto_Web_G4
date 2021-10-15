@@ -9,7 +9,7 @@ class Reserva extends Model
 {
     public $timestamps = false;
     protected $table = 'reservas';
-    protected $fillable = ['id_habitacion','fecha_inicio', 'fecha_fin', 'huespedes', 'doc_cliente'];
+    protected $fillable = ['habitacion_id','fecha_inicio', 'fecha_fin', 'huespedes', 'doc_cliente'];
 
     public function cliente(){
         return $this->belongsTo(cliente::class);
