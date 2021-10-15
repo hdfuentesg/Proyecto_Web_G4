@@ -13,30 +13,30 @@ export class DataService {
   ) { }
 
   signup(data:Object):Observable<any>{
-    return this.http.post(this.API+'/cliente/signup', data);
+    return this.http.post(this.API+'/Cliente/signup', data);
   }
 
   login(data:Object):Observable<any>{
-    return this.http.post(this.API+'/cliente/login', data);
+    return this.http.post(this.API+'/Cliente/login', data);
   }
 
   updateClient(data:Object):Observable<any>{
-    return this.http.post(this.API+'/cliente/update', data, { headers: this.getTokenHeader() });
+    return this.http.post(this.API+'/Cliente/update', data, { headers: this.getTokenHeader() });
   }
   
   getReservations():Observable<any>{
-    return this.http.get(this.API+'/reservacion/history', { headers: this.getTokenHeader() });
+    return this.http.get(this.API+'/Reservacion/history', { headers: this.getTokenHeader() });
   }
 
   search(text:string):Observable<any>{
     let params = new HttpParams();
     params = params.append('text', text);
 
-    return this.http.get(this.API+'/habitacion/search', { params: params });
+    return this.http.get(this.API+'/Habitacion/search', { params: params });
   }
 
   filter(data:Object):Observable<any>{
-    return this.http.post(this.API+'/habitacion/filter', data);
+    return this.http.post(this.API+'/Habitacion/filter', data);
   }
 
   getTokenHeader(){
