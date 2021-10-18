@@ -44,7 +44,7 @@ export class DataService {
 
     return new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token}`
+      'Authorization': 'Bearer ${token}'
     });
   }
   

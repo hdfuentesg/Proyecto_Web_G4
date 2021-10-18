@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'home', component: HomeComponent },
   { path: 'reservation', component: ReservationComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  /* { path: '', redirectTo: '/home', pathMatch: 'full' }, */
 ];
 
 @NgModule({
